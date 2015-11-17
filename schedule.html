@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Meeting-Client (Dev)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Navigation header -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Meeting-Client</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Meeting Room ID">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Join!</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main container -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="page-header">
+        <h2>Schedule a meeting</h2>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="col-sm-6">
+            <div class="page-header">
+              <h5>MEETING DETAILS</h5>
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="inputMeetName">Meeting Name</label>
+                <input type="text" class="form-control" id="inputMeetName" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="inputMeetDesc">Description</label>
+                <textarea class="form-control" rows="5" id="inputMeetDesc"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="inputMeetTime">Date & Time</label>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class='input-group date' id='datepicker'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class='input-group date' id='timepicker'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <div class="page-header">
+              <h5>PARTICIPANTS</h5>
+            </div>
+            <table id='tableEmail' class="table table-striped .col-md-6">
+              <thead>
+                <tr>
+                  <td class=".col-md-1">#</td>
+                  <td class=".col-md-4">E-mail address</td>
+                  <td class=".col-md-1"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="addEmail"
+                      placeholder="Add Participant's Email Address">
+                      <span class="input-group-addon">Add</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="submit" class="btn btn-primary pull-right">Confirm Meeting &nbsp
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-link">Cancel schedule</button>
+        </div>
+      </div>
+    </div>
+    <!-- div row -->
+
+    <footer>
+      <p>&copy; Akmal Zamel 2015</p>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/moment/min/moment.min.js"></script>
+  <script src="node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

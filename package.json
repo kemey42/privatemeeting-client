@@ -1,0 +1,22 @@
+{
+  "name": "meeting-client",
+  "version": "0.0.1",
+  "description": "online meeting WebRTC project",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.7",
+    "peerjs": "~0.3.14",
+    "moment": "~2.10.6",
+    "eonasdan-bootstrap-datetimepicker": "~4.15.35"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AkmalZamel",
+  "license": "BSD-2-Clause"
+}
