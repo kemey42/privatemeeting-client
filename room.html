@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Meeting-Client (Dev)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/room.css">
+</head>
+
+<body>
+  <!-- Navigation header -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Meeting-Client</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right">
+          <div class="input-group">
+            <input type="text" class="form-control" disabled>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Leave</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main container -->
+  <div class="container room">
+    <div class="row">
+      <!-- Left sidebar -->
+      <div class="col-md-2 sidebar well">
+        <table id='tblAgenda' class="table table-striped .col-md-6">
+          <thead>
+            <tr>
+              <td class=".col-md-1">#</td>
+              <td class=".col-md-4"><span class="glyphicon glyphicon-list-alt" aria-hidden="true">  Agenda
+              </span></td>
+              <td class=".col-md-4"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="addAgenda"
+                  placeholder="Add Agenda">
+                  <span class="input-group-addon"><span class="glyphicon glyphicon-plus"></span></span>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Video Chat Window -->
+      <div class="col-md-8">
+
+      </div>
+      <!-- Right sidebar -->
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
