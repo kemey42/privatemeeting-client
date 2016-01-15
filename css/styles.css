@@ -2,3 +2,11 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+
+.input-group .form-control, .input-group-addon, .input-group-btn {
+  cursor: pointer;
+}
+
+.delX {
+  cursor: pointer;
+}
