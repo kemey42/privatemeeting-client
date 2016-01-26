@@ -79,7 +79,7 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class='input-group date' id='datepicker'>
-                      <input type='text' class="form-control" />
+                      <input type='text' id="inputMeetDate" class="form-control" />
                       <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                       </span>
@@ -87,7 +87,7 @@
                   </div>
                   <div class="col-sm-6">
                     <div class='input-group date' id='timepicker'>
-                      <input type='text' class="form-control" />
+                      <input type='text' id="inputMeetTime" class="form-control" />
                       <span class="input-group-addon">
                         <span class="glyphicon glyphicon-time"></span>
                       </span>
@@ -115,30 +115,22 @@
                     <div class="input-group">
                       <input type="text" class="form-control" id="addEmail"
                       placeholder="Add Participant's Email Address">
-                      <span class="input-group-addon" onclick="AddParticipantEmail()">Add</span>
+                      <span class="input-group-addon" onclick="addParticipantEmail()">Add</span>
                     </div>
                   </td>
                   <td></td>
                 </tr>
               </tfoot>
-              <tbody>
-                <!-- <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr> -->
-              </tbody>
+              <tbody id="emailList"></tbody>
             </table>
           </div>
         </div>
       </div>
         <div class="modal-footer">
-          <a href="room.html">
-          <button type="submit" class="btn btn-primary pull-right">Confirm Meeting &nbsp
+          <button type="submit" class="btn btn-primary pull-right" onclick="sendInvite()">Confirm Meeting &nbsp
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
           </button>
-          </a>
-          <button type="button" class="btn btn-link pull-left">Cancel schedule</button>
+          <button type="button" class="btn btn-link pull-left" data-dismiss="modal" onclick="clearSchedule()">Cancel schedule</button>
         </div>
       </div>
 
